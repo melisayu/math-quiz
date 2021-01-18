@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Math Quiz</h1>
+    <div class="question">
+      <p id="first" class="num">
+      </p>
+      <p>+</p>
+      <p id="second" class="num">
+      </p>
+    </div>
+    <form name="answerInput" class="answer-input">
+      <div class="form-group">
+        <input type="text" id="answer" class="answer" required onchange="isNumber(this)" onkeyup="isNumber(this)" />
+        <button id="submitAnswer" class="submit-btn" disabled onclick="checkAddition()">Submit</button>
+      </div>
+      <p id="message" class="message"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
